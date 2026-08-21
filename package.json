@@ -1,0 +1,23 @@
+{
+  "name": "lodgingbase-ts-quickstart",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Search, hold, and confirm a hotel booking with the LodgingBase TypeScript SDK.",
+  "scripts": {
+    "start": "tsx index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@buf/lodgingbase_services.bufbuild_es": "2.14.0-20260821141746-b764197a5428.1",
+    "@bufbuild/protobuf": "^2.14.0",
+    "@connectrpc/connect": "^2.1.1",
+    "@connectrpc/connect-node": "^2.1.1",
+    "@inquirer/prompts": "^7.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
+  }
+}
