@@ -46,17 +46,6 @@ fatal; the results you already have are still bookable.
 `productCode` and `prebookId` are long opaque signed strings. Pass them through untouched — never
 parse, shorten, or display them.
 
-## Notes
-
-- **`BookRequest` has no payment fields.** Settlement runs against your contract, not the booking
-  call, so there are no card details to collect or store here.
-- **BSR versions are pinned exactly.** The registry publishes prerelease-style versions
-  (`2.14.0-20260821141746-…`). Installing by name resolves the newest and writes a matching range;
-  don't shorten it by hand, because a plain `^2.14.0` matches no prerelease and fails with `ETARGET`.
-  Refresh with `npm install @buf/lodgingbase_services.bufbuild_es@latest`.
-- `@inquirer/prompts` is only for the interactive menu — the API itself needs just
-  `@connectrpc/connect`, `@connectrpc/connect-node`, `@bufbuild/protobuf`, and the SDK.
-
 ## License
 
 MIT
